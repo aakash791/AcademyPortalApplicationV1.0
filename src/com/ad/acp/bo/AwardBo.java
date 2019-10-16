@@ -7,24 +7,24 @@ import com.ad.acp.exception.AcpUtilException;
 import com.ad.acp.exception.AwardException;
 import com.ad.acp.model.AwardModel;
 
-public class AwardBo { // NOPMD by 493736 on 6/27/15 3:46 PM
+public class AwardBo { 
 
 	public static final Logger LOGGER=Logger.getLogger(AwardBo.class);
 	
-	public boolean getValidation(AwardModel awardModel) throws AwardException, AcpUtilException { // NOPMD by 493736 on 6/27/15 3:46 PM
+	public boolean getValidation(AwardModel awardModel) throws AwardException, AcpUtilException { 
 
 	
 		LOGGER.info("calculate points");
-		boolean flag=false; // NOPMD by 493736 on 6/27/15 3:46 PM
+		boolean flag=false; 
 		int points=0;
 
 		
-		double student=awardModel.getPercent(); // NOPMD by 493736 on 6/27/15 3:46 PM
-		double batpercent=awardModel.getBatpercent(); // NOPMD by 493736 on 6/27/15 3:46 PM
-		int hours=awardModel.getHours(); // NOPMD by 493736 on 6/27/15 3:46 PM
+		double student=awardModel.getPercent();
+		double batpercent=awardModel.getBatpercent(); 
+		int hours=awardModel.getHours(); 
 		//awardModel.getFacupgarde();
-		String cert=awardModel.getCertificate(); // NOPMD by 493736 on 6/27/15 3:46 PM
-		int handson =awardModel.getHandson(); // NOPMD by 493736 on 6/27/15 3:46 PM
+		String cert=awardModel.getCertificate(); 
+		int handson =awardModel.getHandson(); 
 
 		if(student>=90 && student<=100){
 			points+=20;
@@ -61,7 +61,7 @@ public class AwardBo { // NOPMD by 493736 on 6/27/15 3:46 PM
 		LOGGER.info("set points");
 		awardModel.setPoints(points);
 		
-		AwardDao awardDao=new AwardDao(); // NOPMD by 493736 on 6/27/15 3:47 PM
+		AwardDao awardDao=new AwardDao();
 		LOGGER.info("call awardCalculation() of awardDao");
 		if(awardDao.awardCalculation(awardModel)){
 			flag=true;
