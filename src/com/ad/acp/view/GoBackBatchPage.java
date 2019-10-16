@@ -15,7 +15,7 @@ public class GoBackBatchPage {
 		BatchPage1 batchPage1=new BatchPage1();
 		boolean flag=false;
 	
-		System.out.println("GO BACK TO BATCH MENU(1) OR MAIN MENU(2) EXIT(3) (PRESS 1 , 2 OR 3 )"); // NOPMD by 493736 on 6/27/15 5:32 PM
+		System.out.println("GO BACK TO BATCH MENU(1) OR MAIN MENU(2) EXIT(3) (PRESS 1 , 2 OR 3 )");  
 		do {
 			input = scanner.next();
 			if (input.matches("[1-3]")) {
@@ -28,7 +28,7 @@ public class GoBackBatchPage {
 					System.exit(0);
 			} else {
 				ch = -1;
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:32 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch > 3 || ch < 1);
 		

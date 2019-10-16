@@ -23,18 +23,18 @@ public class AwardPage1 {
 		double percent = 0, batpercent = 0;
 		int hours = 0,handson = 0;
 
-		System.out.println("SELECT FACULTY ID"); // NOPMD by 493736 on 6/27/15 4:13 PM
+		System.out.println("SELECT FACULTY ID");  
 		// FETCH FACULTY ID
 		facid=FetchFacID.viewFacultyId(); 
 
 		batid=FetchBatID.viewBatID(facid);
-		System.out.println("BATCH ID:- "+batid); // NOPMD by 493736 on 6/27/15 4:13 PM
+		System.out.println("BATCH ID:- "+batid);  
 		// SHOW BATCH ID
 	
 
 		dname = FetchAwaDomName.viewAwaDomName(facid);
 		
-		System.out.println("ENTER STUDENT FEEDBACK PERCENTAGE"); // NOPMD by 493736 on 6/27/15 4:13 PM
+		System.out.println("ENTER STUDENT FEEDBACK PERCENTAGE");  
 		do {
 			input = scanner.nextLine();
 			if (input.matches("[0-9]+[.]{0,1}[0-9]*")) {
@@ -43,16 +43,16 @@ public class AwardPage1 {
 				if (percent >= 1 && percent <= 100) {
 					flag = false;
 				} else {
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 4:13 PM
+					System.out.println("ENTER AGAIN");  
 					flag = true;
 				}
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 4:13 PM
+				System.out.println("ENTER AGAIN");  
 				flag = true;
 			}
 		} while (flag);
 
-		System.out.println("ENTER EXTRA HOURS"); // NOPMD by 493736 on 6/27/15 5:31 PM
+		System.out.println("ENTER EXTRA HOURS");  
 
 		do {
 			input = scanner.nextLine();
@@ -60,12 +60,12 @@ public class AwardPage1 {
 				hours = Integer.parseInt(input);
 				flag = false;
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:31 PM
+				System.out.println("ENTER AGAIN");  
 				flag = true;
 			}
 		} while (flag);
 
-		System.out.println("ENTER BATCH PASS PERCENTAGE(%)"); // NOPMD by 493736 on 6/27/15 5:31 PM
+		System.out.println("ENTER BATCH PASS PERCENTAGE(%)");  
 		do {
 			input = scanner.nextLine();
 			if (input.matches("[0-9]+[.]{0,1}[0-9]*")) {
@@ -74,11 +74,11 @@ public class AwardPage1 {
 				if (batpercent >= 1 && batpercent <= 100) {
 					flag = false;
 				} else {
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:31 PM
+					System.out.println("ENTER AGAIN");  
 					flag = true;
 				}
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:31 PM
+				System.out.println("ENTER AGAIN");  
 				flag = true;
 			}
 		} while (flag);
@@ -108,7 +108,7 @@ public class AwardPage1 {
 
 		} while (flag);*/
 
-		System.out // NOPMD by 493736 on 6/27/15 5:34 PM
+		System.out  
 				.println("CERTIFICATION DONE? (PRESS Y FOR YES AND N FOR NO)");
 		do {
 			input = scanner.nextLine();
@@ -120,11 +120,11 @@ public class AwardPage1 {
 				flag = false;
 			} else {
 				flag = true;
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:34 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (flag);
 
-		System.out.println("ENTER HANDSON COMPLETION "); // NOPMD by 493736 on 6/27/15 5:34 PM
+		System.out.println("ENTER HANDSON COMPLETION ");  
 		do {
 			input = scanner.nextLine();
 			if (input.matches("[0-9]+")) {
@@ -140,15 +140,15 @@ public class AwardPage1 {
 					}else if (dname.equalsIgnoreCase("TESTING") && handson<=175) { 
 						flag = false;
 					}else{
-						System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:34 PM
+						System.out.println("ENTER AGAIN");  
 						flag=true;
 					}
 				} else {
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:34 PM
+					System.out.println("ENTER AGAIN");  
 					flag = true;
 				}
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:36 PM
+				System.out.println("ENTER AGAIN");  
 				flag = true;
 			}
 		} while (flag);

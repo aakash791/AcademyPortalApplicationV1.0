@@ -18,8 +18,8 @@ public class FacultyBoTest extends TestCase {
 
 	@Test //public boolean getValidation(FacultyModel)
 	public void testGetValidation(){
-		FacultyBo e0Obj = new FacultyBo(); // NOPMD by 493736 on 6/29/15 10:28 AM
-		FacultyModel e0Arg0 = new FacultyModel(); // NOPMD by 493736 on 6/29/15 10:28 AM
+		FacultyBo e0Obj = new FacultyBo();  
+		FacultyModel e0Arg0 = new FacultyModel();  
 		e0Arg0.setAddress("SWfc0elVgW3kO");
 		e0Arg0.setFacid("Jl0kKRY");
 		e0Arg0.setFname("3qJaocea570Ky");
@@ -32,9 +32,9 @@ public class FacultyBoTest extends TestCase {
 		
 
 		try{
-			boolean e0 = e0Obj.getValidation(e0Arg0); // NOPMD by 493736 on 6/29/15 10:28 AM
+			boolean e0 = e0Obj.getValidation(e0Arg0);  
 			//TODO Based on your need, provide necessary assertion condition
-		assertEquals(e0, new Object()); // NOPMD by 493736 on 6/29/15 10:28 AM
+		assertEquals(e0, new Object());  
 		}catch(Exception e){
 			fail();
 		}
@@ -43,8 +43,8 @@ public class FacultyBoTest extends TestCase {
 
 	@Test
 	public void testSequence(){
-		FacultyBo e0Obj = new FacultyBo(); // NOPMD by 493736 on 6/29/15 10:28 AM
-		FacultyModel e0Arg0 = new FacultyModel(); // NOPMD by 493736 on 6/29/15 10:28 AM
+		FacultyBo e0Obj = new FacultyBo();  
+		FacultyModel e0Arg0 = new FacultyModel();  
 		e0Arg0.setAddress("JMTCB");
 		e0Arg0.setFacid("VoIarFs5aZ");
 		e0Arg0.setFname("6IXFpT8z5QvL");
@@ -57,9 +57,9 @@ public class FacultyBoTest extends TestCase {
 		
 
 		try{
-			boolean e0 = e0Obj.getValidation(e0Arg0); // NOPMD by 493736 on 6/29/15 10:28 AM
+			boolean e0 = e0Obj.getValidation(e0Arg0);  
 			//TODO Based on your need, provide necessary assertion condition
-		assertEquals(e0, new Object()); // NOPMD by 493736 on 6/29/15 10:28 AM
+		assertEquals(e0, new Object());  
 		}catch(Exception e){
 			fail();
 		}

@@ -18,8 +18,8 @@ public class AwardBoTest extends TestCase {
 
 	@Test //public boolean getValidation(AwardModel)
 	public void testGetValidation(){
-		AwardBo e0Obj = new AwardBo(); // NOPMD by 493736 on 6/27/15 3:48 PM
-		AwardModel e0Arg0 = new AwardModel(); // NOPMD by 493736 on 6/27/15 3:48 PM
+		AwardBo e0Obj = new AwardBo(); 
+		AwardModel e0Arg0 = new AwardModel();
 		e0Arg0.setHours(84);
 		e0Arg0.setPercent(Double.parseDouble("0.09610323774069629"));
 		e0Arg0.setCertificate("DMHK7nM");
@@ -32,7 +32,7 @@ public class AwardBoTest extends TestCase {
 		
 
 		try{
-			boolean e0 = e0Obj.getValidation(e0Arg0); // NOPMD by 493736 on 6/27/15 3:48 PM
+			boolean e0 = e0Obj.getValidation(e0Arg0); 
 			//TODO Based on your need, provide necessary assertion condition
 		assertNotSame(e0, new Object());
 		}catch(Exception e){
@@ -42,8 +42,8 @@ public class AwardBoTest extends TestCase {
 	
 	@Test //public boolean getValidation(AwardModel)
 	public void testGetValidation1(){
-		AwardBo e0Obj = new AwardBo(); // NOPMD by 493736 on 6/27/15 3:48 PM
-		AwardModel e0Arg0 = new AwardModel(); // NOPMD by 493736 on 6/27/15 3:48 PM
+		AwardBo e0Obj = new AwardBo(); 
+		AwardModel e0Arg0 = new AwardModel(); 
 		e0Arg0.setHours(90);
 		e0Arg0.setPercent(Double.parseDouble("90"));
 		e0Arg0.setCertificate("Y");
@@ -56,9 +56,9 @@ public class AwardBoTest extends TestCase {
 		
 
 		try{
-			boolean e0 = e0Obj.getValidation(e0Arg0); // NOPMD by 493736 on 6/27/15 3:48 PM
+			boolean e0 = e0Obj.getValidation(e0Arg0); 
 			//TODO Based on your need, provide necessary assertion condition
-		assertSame(e0, false); //make changes to db to make it true // NOPMD by 493736 on 6/27/15 3:48 PM
+		assertSame(e0, false); //make changes to db to make it true 
 		}catch(Exception e){
 			fail();
 		}

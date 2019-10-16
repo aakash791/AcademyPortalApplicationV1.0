@@ -20,30 +20,30 @@ public class FacultyPage1 {
 		long contact = 0;
 		boolean flag = false;
 		
-		System.out.println("**********************************"); // NOPMD by 493736 on 6/27/15 5:32 PM
+		System.out.println("**********************************");  
 		do {
-			System.out.println("ENTER FACULTY NAME "); // NOPMD by 493736 on 6/27/15 5:32 PM
+			System.out.println("ENTER FACULTY NAME ");  
 			fname = scanner.nextLine();
 			if (fname.trim().equals("") || !fname.matches("[A-Za-z ]+")) {
 				flag = true;
-				System.out.println("ENTER AGAIN !!"); // NOPMD by 493736 on 6/27/15 5:32 PM
+				System.out.println("ENTER AGAIN !!");  
 			} else {
 				flag = false;
 			}
 		} while (flag);
-		System.out.println("ENTER LAST HIGHEST QUALIFICATION"); // NOPMD by 493736 on 6/27/15 5:32 PM
-		System.out.println("1.HS"); // NOPMD by 493736 on 6/27/15 5:32 PM
-		System.out.println("2.BA"); // NOPMD by 493736 on 6/27/15 5:35 PM
-		System.out.println("3.MA"); // NOPMD by 493736 on 6/27/15 5:34 PM
-		System.out.println("4.BTECH"); // NOPMD by 493736 on 6/27/15 5:35 PM
-		System.out.println("5.MTECH"); // NOPMD by 493736 on 6/27/15 5:34 PM
-		System.out.println("6.BCOM"); // NOPMD by 493736 on 6/27/15 5:35 PM
-		System.out.println("7.MCOM"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("8.PHD"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("9.BCA"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("10.MCA"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("11.BSC"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("12.MSC"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("ENTER LAST HIGHEST QUALIFICATION");  
+		System.out.println("1.HS");  
+		System.out.println("2.BA");  
+		System.out.println("3.MA");  
+		System.out.println("4.BTECH");  
+		System.out.println("5.MTECH");  
+		System.out.println("6.BCOM");  
+		System.out.println("7.MCOM");  
+		System.out.println("8.PHD");  
+		System.out.println("9.BCA");  
+		System.out.println("10.MCA");  
+		System.out.println("11.BSC");  
+		System.out.println("12.MSC");  
 		do {
 			input = scanner.nextLine();
 			if (input.matches("[0-9]{1,}")) {
@@ -87,16 +87,16 @@ public class FacultyPage1 {
 					break;
 
 				default:
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:38 PM
+					System.out.println("ENTER AGAIN");  
 					break;
 				}
 
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:38 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch > 12 || ch < 1);
 
-		System.out.println("ENTER YEAR OF EXPERIENCE"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("ENTER YEAR OF EXPERIENCE");  
 		do {
 			input = scanner.nextLine();
 			if (input.matches("[0-9]{1,2}")) {
@@ -104,11 +104,11 @@ public class FacultyPage1 {
 				flag = false;
 			} else {
 				flag = true;
-				System.out.println("ENTER AGAIN !!"); // NOPMD by 493736 on 6/27/15 5:38 PM
+				System.out.println("ENTER AGAIN !!");  
 			}
 		} while (flag);
 
-		System.out.println("ENTER CONTACT"); // NOPMD by 493736 on 6/27/15 5:39 PM
+		System.out.println("ENTER CONTACT");  
 
 		do {
 			input = scanner.nextLine();
@@ -117,42 +117,42 @@ public class FacultyPage1 {
 				flag = false;
 			} else {
 				flag = true;
-				System.out.println("ENTER AGAIN !!"); // NOPMD by 493736 on 6/27/15 5:39 PM
+				System.out.println("ENTER AGAIN !!");  
 			}
 		} while (flag);
 		do {
-			System.out.println("ENTER EMAIL ADDRESS"); // NOPMD by 493736 on 6/27/15 5:39 PM
+			System.out.println("ENTER EMAIL ADDRESS");  
 			email = scanner.nextLine();
 			if (email.trim().equals("")
 					|| !email
 							.matches("[A-Za-z-_0-9]{1,}[@]{1}[A-Za-z]{1,}[.]{1}[A-Za-z]{1,}")) {
 				flag = true;
-				System.out.println("ENTER AGAIN !!"); // NOPMD by 493736 on 6/27/15 5:39 PM
+				System.out.println("ENTER AGAIN !!");  
 			} else {
 				flag = false;
 			}
 		} while (flag);
 		do {
-			System.out.println("ENTER FACULTY ADDRESS"); // NOPMD by 493736 on 6/27/15 5:39 PM
+			System.out.println("ENTER FACULTY ADDRESS");  
 			add = scanner.nextLine();
 			if (add.trim().equals("")) {
 				flag = true;
-				System.out.println("ENTER AGAIN !!"); // NOPMD by 493736 on 6/27/15 5:39 PM
+				System.out.println("ENTER AGAIN !!");  
 			} else {
 				flag = false;
 			}
 		} while (flag);
 
-		System.out.println("ENTER FACULTY SKILL"); // NOPMD by 493736 on 6/27/15 5:39 PM
-		System.out.println("1.C"); // NOPMD by 493736 on 6/27/15 5:39 PM
-		System.out.println("2.C++"); // NOPMD by 493736 on 6/27/15 5:39 PM
-		System.out.println("3.ASP.NET"); // NOPMD by 493736 on 6/27/15 5:39 PM
-		System.out.println("4.VB.NET"); // NOPMD by 493736 on 6/27/15 5:40 PM
-		System.out.println("5.COBOL"); // NOPMD by 493736 on 6/30/15 4:00 PM
-		System.out.println("6.SQL"); // NOPMD by 493736 on 6/30/15 4:00 PM
-		System.out.println("7.PLSQL"); // NOPMD by 493736 on 6/30/15 4:00 PM
-		System.out.println("8.JAVA"); // NOPMD by 493736 on 6/30/15 4:00 PM
-		System.out.println("9.ADV_JAVA"); // NOPMD by 493736 on 6/30/15 4:00 PM
+		System.out.println("ENTER FACULTY SKILL");  
+		System.out.println("1.C");  
+		System.out.println("2.C++");  
+		System.out.println("3.ASP.NET");  
+		System.out.println("4.VB.NET");  
+		System.out.println("5.COBOL");  
+		System.out.println("6.SQL");  
+		System.out.println("7.PLSQL");  
+		System.out.println("8.JAVA");  
+		System.out.println("9.ADV_JAVA");  
 		System.out.println("10.QTP");
 		System.out.println("11.SQL SERVER");
 		System.out.println("12.DATABASE CONCEPTS");
@@ -206,21 +206,21 @@ public class FacultyPage1 {
 					skill = "JUNIT";
 					break;
 				default:
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:40 PM
+					System.out.println("ENTER AGAIN");  
 					break;
 				}
 
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:40 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch > 14 || ch < 1);
 
-		System.out.println("CERTIFICATION ? (YES/NO) PRESS Y FOR YES AND N FOR NO"); // NOPMD by 493736 on 6/27/15 5:40 PM
+		System.out.println("CERTIFICATION ? (YES/NO) PRESS Y FOR YES AND N FOR NO");  
 		do {
 			title = scanner.next().toUpperCase();
 			if (title.trim().equals("") || !title.matches("[YN]")) {
 				flag = true;
-				System.out.println("ENTER AGAIN !!"); // NOPMD by 493736 on 6/27/15 5:40 PM
+				System.out.println("ENTER AGAIN !!");  
 			} else {
 				flag = false;
 			}

@@ -11,11 +11,11 @@ public class LoginBo {
 
 	public static final Logger LOGGER=Logger.getLogger(LoginBo.class);
 	
-	public boolean getValidation(LoginModel loginModel) throws LoginException,  AcpUtilException { // NOPMD by 493736 on 6/29/15 10:28 AM
+	public boolean getValidation(LoginModel loginModel) throws LoginException,  AcpUtilException {  
 	
 		LOGGER.info("in loginBo getValidation()");
-		boolean flag=false; // NOPMD by 493736 on 6/29/15 10:28 AM
-		LoginDao loginDao=new LoginDao(); // NOPMD by 493736 on 6/29/15 10:28 AM
+		boolean flag=false;  
+		LoginDao loginDao=new LoginDao();  
 		LOGGER.info("calling verifyadmin");
 		if(loginDao.verifyadmin(loginModel)){
 			flag=true;

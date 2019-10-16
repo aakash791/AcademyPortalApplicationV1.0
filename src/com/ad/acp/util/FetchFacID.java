@@ -23,7 +23,7 @@ public class FetchFacID {
 			ResultSet resultSet = preparedStatement.executeQuery();
 
 			while (resultSet.next()) {
-				System.out.println(resultSet.getString(1)); // NOPMD by 493736 on 6/24/15 11:48 AM
+				System.out.println(resultSet.getString(1));  
 			}
 			do {
 				Scanner scanner = new Scanner(System.in);
@@ -37,7 +37,7 @@ public class FetchFacID {
 					fac_id = resultSet.getString(1);
 					flag = false;
 				} else {
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 4:12 PM
+					System.out.println("ENTER AGAIN");  
 					flag = true;
 				}
 			} while (flag);

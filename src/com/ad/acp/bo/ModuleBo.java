@@ -14,57 +14,57 @@ import com.ad.acp.exception.ModuleException;
 import com.ad.acp.model.ModuleModel;
 import com.ad.acp.util.AcpUtil;
 
-public class ModuleBo { // NOPMD by 493736 on 6/29/15 10:28 AM
+public class ModuleBo {  
 
 	public static final Logger LOGGER=Logger.getLogger(ModuleBo.class); 
 	
-	public boolean getValidation(ModuleModel moduleModel) throws ModuleException, AcpUtilException { // NOPMD by 493736 on 6/29/15 10:28 AM
+	public boolean getValidation(ModuleModel moduleModel) throws ModuleException, AcpUtilException {  
 
 		LOGGER.info("Generate Tech ID and Domain ID");
-		boolean flag = false; // NOPMD by 493736 on 6/29/15 10:29 AM
-		Connection connection = AcpUtil.getConnection(); // NOPMD by 493736 on 6/29/15 10:28 AM
-		String tech_id = null, dom_id = null,id; // NOPMD by 493736 on 6/29/15 10:29 AM
+		boolean flag = false;  
+		Connection connection = AcpUtil.getConnection();  
+		String tech_id = null, dom_id = null,id;  
 
 		try {
 			LOGGER.info("Fetch Last Tech ID");
-			PreparedStatement preparedStatement = connection // NOPMD by 493736 on 6/29/15 10:28 AM
+			PreparedStatement preparedStatement = connection  
 					.prepareStatement(AcpUtil.LAST_MID1);
-			ResultSet resultSet = preparedStatement.executeQuery(); // NOPMD by 493736 on 6/29/15 10:28 AM
+			ResultSet resultSet = preparedStatement.executeQuery();  
 			if (resultSet.next()) {
 				id = resultSet.getString(1);
-				int temp = Integer.parseInt(id); // NOPMD by 493736 on 6/29/15 10:29 AM
+				int temp = Integer.parseInt(id);  
 				temp++;
 				tech_id = String.valueOf(temp);
-				if (tech_id.length() == 1) // NOPMD by 493736 on 6/29/15 10:29 AM
+				if (tech_id.length() == 1)  
 					tech_id = "00".concat(tech_id);
-				if (tech_id.length() == 2) // NOPMD by 493736 on 6/29/15 10:29 AM
+				if (tech_id.length() == 2)  
 					tech_id = "0".concat(tech_id);
 				LOGGER.info("Set new Tech_Id");
 				tech_id = moduleModel.getTname().concat("#").concat(tech_id);
 			} else {
 				LOGGER.info("Set new Tech_Id");
-				tech_id = moduleModel.getTname().concat("#").concat("001"); // NOPMD by 493736 on 6/29/15 10:28 AM
+				tech_id = moduleModel.getTname().concat("#").concat("001");  
 			}
 			
 			
 			LOGGER.info("Fetch Last Domain ID");
-			PreparedStatement preparedStatement1 = connection // NOPMD by 493736 on 6/29/15 10:28 AM
+			PreparedStatement preparedStatement1 = connection  
 					.prepareStatement(AcpUtil.LAST_MID2);
-			ResultSet resultSet1 = preparedStatement1.executeQuery(); // NOPMD by 493736 on 6/29/15 10:28 AM
+			ResultSet resultSet1 = preparedStatement1.executeQuery();  
 			if (resultSet1.next()) {
 				id = resultSet.getString(1);
 				int temp = Integer.parseInt(id);
 				temp++;
 				dom_id = String.valueOf(temp);
-				if (dom_id.length() == 1) // NOPMD by 493736 on 6/29/15 10:29 AM
+				if (dom_id.length() == 1)  
 					dom_id = "00".concat(dom_id);
-				if (dom_id.length() == 2) // NOPMD by 493736 on 6/29/15 10:29 AM
+				if (dom_id.length() == 2)  
 					dom_id = "0".concat(dom_id);
 				LOGGER.info("Set new Domain_Id");
 				dom_id = moduleModel.getDomain().concat("#").concat(dom_id);
 			} else {
 				LOGGER.info("Set new Domain_Id");
-				dom_id = moduleModel.getDomain().concat("#").concat("001"); // NOPMD by 493736 on 6/29/15 10:29 AM
+				dom_id = moduleModel.getDomain().concat("#").concat("001");  
 			}
 
 			LOGGER.info("closing connection");
@@ -75,7 +75,7 @@ public class ModuleBo { // NOPMD by 493736 on 6/29/15 10:28 AM
 			AcpUtil.closeConnection();
 		} catch (SQLException e) {
 			LOGGER.warn("in catch ModuleException");
-			throw new ModuleException(ExceptionMessages.SQL_MSG1); // NOPMD by 493736 on 6/29/15 10:28 AM
+			throw new ModuleException(ExceptionMessages.SQL_MSG1);  
 		}
 		
 		moduleModel.setTechid(tech_id);

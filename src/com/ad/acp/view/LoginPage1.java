@@ -15,10 +15,10 @@ public class LoginPage1 {
 		LOGGER.info("show welcome screen");
 		Scanner scanner=new Scanner(System.in);
 		String username,password;
-		System.out.println("************WELCOME***********"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("ENTER USERNAME: "); // NOPMD by 493736 on 6/27/15 5:33 PM
+		System.out.println("************WELCOME***********");  
+		System.out.println("ENTER USERNAME: ");  
 		username = scanner.nextLine();
-		System.out.println("ENTER PASSWORD: "); // NOPMD by 493736 on 6/27/15 5:33 PM
+		System.out.println("ENTER PASSWORD: ");  
 		password = scanner.nextLine();
 		LOGGER.info("setting username and password in LoginModel");
 		LoginModel loginModel=new LoginModel();

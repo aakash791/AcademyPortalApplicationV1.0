@@ -18,8 +18,8 @@ public class BatchBoTest extends TestCase {
 
 	@Test //public boolean getValidation(BatchModel)
 	public void testGetValidation(){
-		BatchBo e0Obj = new BatchBo(); // NOPMD by 493736 on 6/27/15 3:53 PM
-		BatchModel e0Arg0 = new BatchModel(); // NOPMD by 493736 on 6/29/15 10:22 AM
+		BatchBo e0Obj = new BatchBo();  
+		BatchModel e0Arg0 = new BatchModel();  
 		e0Arg0.setFacid("");
 		e0Arg0.setDomid("iaTmqtOyh1UNQkZEzT1");
 		e0Arg0.setBatid("");
@@ -29,9 +29,9 @@ public class BatchBoTest extends TestCase {
 		
 
 		try{
-			boolean e0 = e0Obj.getValidation(e0Arg0); // NOPMD by 493736 on 6/27/15 3:51 PM
+			boolean e0 = e0Obj.getValidation(e0Arg0);  
 			//TODO Based on your need, provide necessary assertion condition
-		assertEquals(e0, new Object()); // NOPMD by 493736 on 6/27/15 3:51 PM
+		assertEquals(e0, new Object());  
 		}catch(Exception e){
 			fail();
 		}
@@ -40,8 +40,8 @@ public class BatchBoTest extends TestCase {
 
 	@Test //public boolean getValidation1(BatchModel)
 	public void testGetValidation1(){
-		BatchBo e0Obj = new BatchBo(); // NOPMD by 493736 on 6/29/15 10:22 AM
-		BatchModel e0Arg0 = new BatchModel(); // NOPMD by 493736 on 6/27/15 3:51 PM
+		BatchBo e0Obj = new BatchBo();  
+		BatchModel e0Arg0 = new BatchModel();  
 		e0Arg0.setFacid("jZpK");
 		e0Arg0.setDomid("NQ4aQJbWtfDNXmQ");
 		e0Arg0.setBatid("Ad");
@@ -51,9 +51,9 @@ public class BatchBoTest extends TestCase {
 		
 
 		try{
-			boolean e0 = e0Obj.getValidation1(e0Arg0); // NOPMD by 493736 on 6/27/15 3:51 PM
+			boolean e0 = e0Obj.getValidation1(e0Arg0);  
 			//TODO Based on your need, provide necessary assertion condition
-		assertEquals(e0, new Object()); // NOPMD by 493736 on 6/27/15 3:52 PM
+		assertEquals(e0, new Object());  
 		}catch(Exception e){
 			fail();
 		}
@@ -62,8 +62,8 @@ public class BatchBoTest extends TestCase {
 
 	@Test
 	public void testSequence(){
-		BatchBo e0Obj = new BatchBo(); // NOPMD by 493736 on 6/27/15 3:53 PM
-		BatchModel e0Arg0 = new BatchModel(); // NOPMD by 493736 on 6/27/15 3:53 PM
+		BatchBo e0Obj = new BatchBo();  
+		BatchModel e0Arg0 = new BatchModel();  
 		e0Arg0.setFacid("xrY8WnJFZ");
 		e0Arg0.setDomid("cRW1kIzw2XRrhC");
 		e0Arg0.setBatid("L09ZLw");
@@ -73,13 +73,13 @@ public class BatchBoTest extends TestCase {
 		
 
 		try{
-			boolean e0 = e0Obj.getValidation(e0Arg0); // NOPMD by 493736 on 6/27/15 3:51 PM
+			boolean e0 = e0Obj.getValidation(e0Arg0);  
 			//TODO Based on your need, provide necessary assertion condition
-		assertEquals(e0, new Object()); // NOPMD by 493736 on 6/27/15 3:51 PM
+		assertEquals(e0, new Object());  
 		}catch(Exception e){
 			fail();
 		}
-		BatchModel e1Arg0 = new BatchModel(); // NOPMD by 493736 on 6/29/15 10:22 AM
+		BatchModel e1Arg0 = new BatchModel();  
 		e1Arg0.setFacid("tbnNw6n9WgKMbwG");
 		e1Arg0.setDomid("qJjhgSKauXG3WBc");
 		e1Arg0.setBatid("f5u");
@@ -89,9 +89,9 @@ public class BatchBoTest extends TestCase {
 		
 
 		try{
-			boolean e1 = e0Obj.getValidation1(e1Arg0); // NOPMD by 493736 on 6/27/15 3:51 PM
+			boolean e1 = e0Obj.getValidation1(e1Arg0);  
 			//TODO Based on your need, provide necessary assertion condition
-		assertEquals(e1, new Object()); // NOPMD by 493736 on 6/29/15 10:22 AM
+		assertEquals(e1, new Object());  
 		}catch(Exception e){
 			fail();
 		}

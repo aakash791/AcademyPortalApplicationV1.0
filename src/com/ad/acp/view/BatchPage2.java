@@ -23,13 +23,13 @@ public class BatchPage2 {
 
 		String domid, facid, batch_start_date, batch_end_date;
 
-		System.out.println("SELECT DOMAIN ID"); // NOPMD by 493736 on 6/27/15 5:30 PM
+		System.out.println("SELECT DOMAIN ID");  
 		domid = FetchDomID.viewDomainId();
 
-		System.out.println("SELECT FACULTY ID"); // NOPMD by 493736 on 6/27/15 5:30 PM
+		System.out.println("SELECT FACULTY ID");  
 		facid = FetchFacID.viewFacultyId();
 
-		System.out.println("ENTER BATCH START DATE"); // NOPMD by 493736 on 6/27/15 5:30 PM
+		System.out.println("ENTER BATCH START DATE");  
 
 		do {
 			batch_start_date = scanner.nextLine();
@@ -41,13 +41,13 @@ public class BatchPage2 {
 
 				flag = false;
 			} catch (ParseException e) {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:30 PM
+				System.out.println("ENTER AGAIN");  
 				flag = true;
 			}
 
 		} while (flag);
 
-		System.out.println("ENTER BATCH END DATE"); // NOPMD by 493736 on 6/27/15 5:30 PM
+		System.out.println("ENTER BATCH END DATE");  
 		do {
 			batch_end_date = scanner.nextLine();
 			try {
@@ -56,12 +56,12 @@ public class BatchPage2 {
 				d = sdf.parse(batch_end_date);
 
 				if (getMonths(batch_start_date, batch_end_date) >= 3 || !checkDate(batch_start_date, batch_end_date)) { 
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:31 PM
+					System.out.println("ENTER AGAIN");  
 					flag = true;
 				} else
 					flag = false;
 			} catch (ParseException e) {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:31 PM
+				System.out.println("ENTER AGAIN");  
 				flag = true;
 			}
 
@@ -76,7 +76,7 @@ public class BatchPage2 {
 		return batchModel;
 	}
 
-	public int getMonths(String s1, String s2) { // NOPMD by 493736 on 6/27/15 4:13 PM
+	public int getMonths(String s1, String s2) {  
 
 		Calendar calendar1 = Calendar.getInstance();
 		try {

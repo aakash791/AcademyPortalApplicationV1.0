@@ -20,15 +20,15 @@ public class LoginPage2 {
 		Scanner scanner=new Scanner(System.in);
 		String input=null;
 		int ch=0;
-		System.out.println("**************Welcome*************"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("-----------MENU-----------"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("1. FACULTY REGISTRATION"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("2. ADD MODULE"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("3. BATCH ALLOCATION/UPDATION"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("4. REPORT MANAGEMENT"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("5. AWARD AND CREDIT POINTS"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("6: EXIT"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("---------------------------"); // NOPMD by 493736 on 6/27/15 5:37 PM
+		System.out.println("**************Welcome*************");  
+		System.out.println("-----------MENU-----------");  
+		System.out.println("1. FACULTY REGISTRATION");  
+		System.out.println("2. ADD MODULE");  
+		System.out.println("3. BATCH ALLOCATION/UPDATION");  
+		System.out.println("4. REPORT MANAGEMENT");  
+		System.out.println("5. AWARD AND CREDIT POINTS");  
+		System.out.println("6: EXIT");  
+		System.out.println("---------------------------");  
 		do {
 			input = scanner.next();
 			LOGGER.info("choice is given");
@@ -66,13 +66,13 @@ public class LoginPage2 {
 					System.exit(0);
 	 			default:
 	 				LOGGER.info("wrong choice given");
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:37 PM
+					System.out.println("ENTER AGAIN");  
 					break;
 				}
 			}
 			else{
 				LOGGER.info("wrong choice given");
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:38 PM
+				System.out.println("ENTER AGAIN");  
 			}
 			} while (ch > 6 || ch < 1);
 	}

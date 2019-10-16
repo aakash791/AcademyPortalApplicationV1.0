@@ -10,7 +10,7 @@ public class GoBackPage {
 		String input;
 		Scanner scanner = new Scanner(System.in);
 		LoginPage2 loginPage2 = new LoginPage2();
-		System.out.println("GO BACK(1) OR EXIT(2) (PRESS 1 OR 2)"); // NOPMD by 493736 on 6/27/15 5:32 PM
+		System.out.println("GO BACK(1) OR EXIT(2) (PRESS 1 OR 2)");  
 		do {
 			input = scanner.nextLine();
 			if (input.matches("[1-2]")) {
@@ -21,7 +21,7 @@ public class GoBackPage {
 					System.exit(0);
 			} else {
 				ch = -1;
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:32 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch > 2 || ch < 1);
 

@@ -19,66 +19,66 @@ public class ReportPage1 {
 		//check current date
 		
 		
-		System.out.println("SELECT BATCH CODE"); // NOPMD by 493736 on 6/27/15 5:33 PM
+		System.out.println("SELECT BATCH CODE");  
         //FETCH BATCH CODE 
 		batid=FetchBatRepCode.viewBatRepCode();
 		
 		facid=FetchFacRepId.viewFacRepId(batid);
-		System.out.println("FACULTY ALLOCATED:- ID: "+facid); // NOPMD by 493736 on 6/27/15 5:34 PM
+		System.out.println("FACULTY ALLOCATED:- ID: "+facid);  
 		//DISPLAY FACULTY ID ALLOCATED
 				
-		System.out.println("SUBMITTED WEEKLY REPORTS"); // NOPMD by 493736 on 6/27/15 5:34 PM
-		System.out.println("0"); // NOPMD by 493736 on 6/27/15 5:34 PM
-		System.out.println("1"); // NOPMD by 493736 on 6/27/15 5:34 PM
-		System.out.println("2"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("3"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("4"); // NOPMD by 493736 on 6/27/15 5:36 PM
+		System.out.println("SUBMITTED WEEKLY REPORTS");  
+		System.out.println("0");  
+		System.out.println("1");  
+		System.out.println("2");  
+		System.out.println("3");  
+		System.out.println("4");  
 		do {
 			input=scanner.nextLine();
 			if(input.matches("[0-4]")){
 				weekrep=Integer.parseInt(input);
 				flag=false;
 			}else{
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:36 PM
+				System.out.println("ENTER AGAIN");  
 				flag=true;
 			}
 		} while (flag);
 
-		System.out.println("MOCK TEST CONDUCTED"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("0"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("1"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("2"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("3"); // NOPMD by 493736 on 6/27/15 5:37 PM
+		System.out.println("MOCK TEST CONDUCTED");  
+		System.out.println("0");  
+		System.out.println("1");  
+		System.out.println("2");  
+		System.out.println("3");  
 		do {
 			input=scanner.nextLine();
 			if(input.matches("[0-3]")){
 				mocktest=Integer.parseInt(input);
 				flag=false;
 			}else{
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:37 PM
+				System.out.println("ENTER AGAIN");  
 				flag=true;
 			}
 		} while (flag);
 		
-		System.out.println("BHS REPORT SUBMITTED (PRESS Y FOR YES AND N FOR NO)"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("BHS REPORT SUBMITTED (PRESS Y FOR YES AND N FOR NO)");  
 		//YES OR NO
 		do {
 			bhsrep=scanner.nextLine();
 			if(bhsrep.equalsIgnoreCase("y") || bhsrep.equalsIgnoreCase("n")){
 				flag=false;
 			}else{
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:38 PM
+				System.out.println("ENTER AGAIN");  
 				flag=true;
 			}
 		} while (flag);
 
-		System.out.println("ENTER INNOVATION PROJECT TITLE"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("ENTER INNOVATION PROJECT TITLE");  
 		inntitle=scanner.nextLine();
 
-		System.out.println("ENTER PROJECT DESCRIPTION"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("ENTER PROJECT DESCRIPTION");  
 		prodesc=scanner.nextLine();
 
-		System.out.println("ENTER PROJECT STATUS (PRESS 1 FOR IN-PROGRESS AND 2 FOR COMPLETED)"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("ENTER PROJECT STATUS (PRESS 1 FOR IN-PROGRESS AND 2 FOR COMPLETED)");  
 		do {
 			input=scanner.nextLine();
 			if(input.matches("[1-2]")){
@@ -90,7 +90,7 @@ public class ReportPage1 {
 				}
 				flag=false;
 			}else{
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:38 PM
+				System.out.println("ENTER AGAIN");  
 				flag=true;
 			}
 		} while (flag);

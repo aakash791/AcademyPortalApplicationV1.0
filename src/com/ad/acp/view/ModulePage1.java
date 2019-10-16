@@ -18,23 +18,23 @@ public class ModulePage1 {
 		int ch = 0, duration = 0;
 		boolean flag = false;
 
-		System.out.println("**********************************"); // NOPMD by 493736 on 6/27/15 5:33 PM
+		System.out.println("**********************************");  
 
-		System.out.println("ENTER TECHNOLOGY NAME"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("1. C"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("2. C++"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("3. ASP.NET"); // NOPMD by 493736 on 6/27/15 5:33 PM
-		System.out.println("4. VB"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("5. COBOL"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("6. SQL"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("7. PLSQL"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("8. JAVA"); // NOPMD by 493736 on 6/27/15 5:36 PM
-		System.out.println("9. ADV_JAVA"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("10. QTP"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("11. SQL SERVER"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("12. DATABASE CONCEPTS"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("13. UNIX"); // NOPMD by 493736 on 6/27/15 5:37 PM
-		System.out.println("14. JUNIT"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("ENTER TECHNOLOGY NAME");  
+		System.out.println("1. C");  
+		System.out.println("2. C++");  
+		System.out.println("3. ASP.NET");  
+		System.out.println("4. VB");  
+		System.out.println("5. COBOL");  
+		System.out.println("6. SQL");  
+		System.out.println("7. PLSQL");  
+		System.out.println("8. JAVA");  
+		System.out.println("9. ADV_JAVA");  
+		System.out.println("10. QTP");  
+		System.out.println("11. SQL SERVER");  
+		System.out.println("12. DATABASE CONCEPTS");  
+		System.out.println("13. UNIX");  
+		System.out.println("14. JUNIT");  
 		do {
 			input = scanner.nextLine();
 			if (input.matches("[0-9]{1,}")) {
@@ -84,20 +84,20 @@ public class ModulePage1 {
 					break;
 
 				default:
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:38 PM
+					System.out.println("ENTER AGAIN");  
 					break;
 				}
 
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:38 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch > 14 || ch < 1);
 
-		System.out.println("ENTER DOMAIN NAME"); // NOPMD by 493736 on 6/27/15 5:38 PM
-		System.out.println("1. JAVA"); // NOPMD by 493736 on 6/27/15 5:38 PM
-		System.out.println("2. DOT_NET"); // NOPMD by 493736 on 6/27/15 5:39 PM
-		System.out.println("3. MAINFRAME"); // NOPMD by 493736 on 6/27/15 5:38 PM
-		System.out.println("4. TESTING"); // NOPMD by 493736 on 6/27/15 5:38 PM
+		System.out.println("ENTER DOMAIN NAME");  
+		System.out.println("1. JAVA");  
+		System.out.println("2. DOT_NET");  
+		System.out.println("3. MAINFRAME");  
+		System.out.println("4. TESTING");  
 
 		do {
 			input = scanner.nextLine();
@@ -110,7 +110,7 @@ public class ModulePage1 {
 						flag = false;
 					} else {
 						flag = true;
-						System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:39 PM
+						System.out.println("ENTER AGAIN");  
 						ch = -1;
 					}
 					domain = "JAVA";
@@ -121,7 +121,7 @@ public class ModulePage1 {
 						flag = false;
 					} else {
 						flag = true;
-						System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:39 PM
+						System.out.println("ENTER AGAIN");  
 						ch = -1;
 					}
 					domain = "DOT_NET";
@@ -134,18 +134,18 @@ public class ModulePage1 {
 					break;
 
 				default:
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:39 PM
+					System.out.println("ENTER AGAIN");  
 					break;
 				}
 
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:39 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch > 4 || ch < 1);
 
-		System.out.println("ENTER MODULE TYPE"); // NOPMD by 493736 on 6/27/15 5:39 PM
-		System.out.println("1. MAJOR"); // NOPMD by 493736 on 6/27/15 5:39 PM
-		System.out.println("2. MINOR"); // NOPMD by 493736 on 6/27/15 5:39 PM
+		System.out.println("ENTER MODULE TYPE");  
+		System.out.println("1. MAJOR");  
+		System.out.println("2. MINOR");  
 
 		do {
 			input = scanner.nextLine();
@@ -161,24 +161,24 @@ public class ModulePage1 {
 						flag = false;
 					} else {
 						flag = true;
-						System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:40 PM
+						System.out.println("ENTER AGAIN");  
 						ch = -1;
 					}
 					module = "MINOR";
 					break;
 
 				default:
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:40 PM
+					System.out.println("ENTER AGAIN");  
 					break;
 				}
 
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:40 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch > 2 || ch < 1);
 
 		do {
-			System.out // NOPMD by 493736 on 6/27/15 5:40 PM
+			System.out  
 					.println("ENTER DURATION IN HOURS (FOR MINOR --> 8-23 HOURS, FOR MAJOR --> ABOVE 24 HOURS)");
 			input = scanner.nextLine();
 			if (input.matches("[0-9]{1,2}")) {
@@ -188,11 +188,11 @@ public class ModulePage1 {
 				} else if (duration >= 24 && module.equals("MAJOR")) {
 					flag = false;
 				} else {
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:40 PM
+					System.out.println("ENTER AGAIN");  
 					flag = true;
 				}
 			} else {
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:40 PM
+				System.out.println("ENTER AGAIN");  
 				flag = true;
 			}
 		} while (flag);

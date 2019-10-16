@@ -9,7 +9,7 @@ import com.ad.acp.exception.AcpUtilException;
 import com.ad.acp.exception.BatchException;
 import com.ad.acp.model.BatchModel;
 
-public class BatchPage1 { // NOPMD by 493736 on 6/30/15 3:59 PM
+public class BatchPage1 {  
 
 	public static final Logger LOGGER=Logger.getLogger(BatchPage1.class);
 	
@@ -22,9 +22,9 @@ public class BatchPage1 { // NOPMD by 493736 on 6/30/15 3:59 PM
 		BatchModel batchModel = new BatchModel();
 		LoginPage2 loginPage2=new LoginPage2();
 		BatchBo batchBo = new BatchBo();
-		System.out.println("*****************"); // NOPMD by 493736 on 6/27/15 4:13 PM
-		System.out.println("1. BATCH ALLOCATION"); // NOPMD by 493736 on 6/27/15 4:13 PM
-		System.out.println("2. BATCH UPDATE"); // NOPMD by 493736 on 6/27/15 4:13 PM
+		System.out.println("*****************");  
+		System.out.println("1. BATCH ALLOCATION");  
+		System.out.println("2. BATCH UPDATE");  
 		do {
 			input = scanner.next();
 			if (input.matches("[1-2]{1}")) {
@@ -62,13 +62,13 @@ public class BatchPage1 { // NOPMD by 493736 on 6/30/15 3:59 PM
 					break;
 				default:
 					LOGGER.info("show error message");
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 4:13 PM
+					System.out.println("ENTER AGAIN");  
 					break;
 				}
 			} else {
 				ch = -1;
 				LOGGER.info("show error message");
-				System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 4:13 PM
+				System.out.println("ENTER AGAIN");  
 			}
 		} while (ch < 1 || ch > 2);
 

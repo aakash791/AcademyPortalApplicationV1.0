@@ -24,12 +24,12 @@ public class BatchPage3 {
 
 		String batid, batch_closed_date;
 
-		System.out.println("ENTER BATCH ID"); // NOPMD by 493736 on 6/27/15 5:32 PM
+		System.out.println("ENTER BATCH ID");  
 		batid = scanner.nextLine();
 
 		batchModel = FetchBatchInfo.viewBatchInfo(batid);
 
-		System.out.println("ENTER BATCH CLOSED DATE"); // NOPMD by 493736 on 6/27/15 5:32 PM
+		System.out.println("ENTER BATCH CLOSED DATE");  
 
 		do {
 			batch_closed_date = scanner.nextLine();
@@ -42,11 +42,11 @@ public class BatchPage3 {
 				if (checkDate(batch_closed_date,
 						batchModel.getBatchEndDate())) {
 					flag = true;
-					System.out.println("ENTER AGAIN"); // NOPMD by 493736 on 6/27/15 5:32 PM
+					System.out.println("ENTER AGAIN");  
 				} else
 					flag = false;
 			} catch (ParseException e) {
-				System.out.println("ENTER AGAIN : DATE NOT IN FORMAT"); // NOPMD by 493736 on 6/27/15 5:32 PM
+				System.out.println("ENTER AGAIN : DATE NOT IN FORMAT");  
 				flag = true;
 			}
 
